@@ -1,0 +1,143 @@
+ <div class="container">
+<!-- string interpolation -->
+<!-- <h2>{{username}}</h2>
+
+<p>{{age}}</p>
+
+<p>{{city}}</p> -->
+
+<!-- <h2>my name is {{username}} and am {{age}} is old. and lives in {{city}}</h2> -->
+
+<!-- interpolation with expression -->
+<!-- 
+<h2>{{username + ' ' + lastname}}</h2>
+
+<p>total :{{price * quantity}}</p>
+
+<p>price + 50={{price + 50}}</p> -->
+
+
+<!-- property Binding -->
+
+<!-- <img [src]="imageurl" width="200px"> -->
+
+<!-- property binding with button -->
+
+<!-- <button [disabled]="isDisabled">submit</button> -->
+
+<!-- property binding with css class -->
+<!-- 
+<div [class.active]="isActive">
+    userprofile
+</div> -->
+
+<!-- property binding with style -->
+<!-- 
+<p [style.color]="textcolor">angular developer</p>
+<p [style.font-size.px]="20">angular</p> -->
+
+<!-- evnet binding with event -->
+
+<!-- <button (click)="showmessage()">click me</button>
+
+<p>{{message}}</p> -->
+
+<!-- event binding with $event -->
+
+<!-- <input>
+
+<p>{{enter}}</p>
+
+<input type="text" [(ngModel)]="name" placeholder="enter your name">
+
+<h3>hello {{name}}</h3>
+
+<input type="text" [(ngModel)]="age">
+
+<p>your age is {{age}}</p>
+
+<label>
+    <input type="checkbox" [(ngModel)]="isActive">Active</label>
+
+
+
+<p>status;{{isActive}}</p>
+
+
+<h3>selectgender</h3>
+<label>
+    <input type="radio" name="gender" value="Male" [(ngModel)]="gender"> 
+</label>
+<label>
+    <input type="radio" name="gender" value="Female" [(ngModel)]="gender">
+</label>
+
+<p>slect:{{gender}}</p>
+
+
+<select [(ngModel)]="selectcity">
+    <option value="pune">pune</option>
+    <option value="MUmbai">pune</option>
+    <option value="nagpur">pune</option>
+    <option value="hydrabad">pune</option>
+
+</select>
+
+<p>city {{selectcity}}</p>
+
+<div>
+    <label>name</label>
+    <input type="text" [(ngModel)]="user.name">
+</div>
+<div>
+    <label>email</label>
+    <input type="text" [(ngModel)]="user.email">
+</div><div>
+    <label>age</label>
+    <input type="text" [(ngModel)]="user.age">
+</div>
+
+<h3>userdetails</h3>
+<p>{{user.name}}</p>
+<p>{{user.email}}</p>
+<p>{{user.age}}</p>
+
+
+
+
+
+
+<div *ngFor="let fruit of fruits">
+
+    <h3>{{fruit.name}}</h3>
+    <input type="text" [(ngModel)]="fruit.quantity" min="1">
+ <p>
+    Price: {{ fruit.price }}
+  </p>
+
+  <p>
+    Quantity: {{ fruit.quantity }}
+  </p>
+
+  <p>
+    Total: {{ fruit.price * fruit.quantity }}
+  </p>
+</div>
+
+<input type="text" [(ngModel)]="searchT" placeholder="coffee..">
+<div *ngFor="let item of filter">
+    <h3>{{item.name}}</h3>
+    <p>{{item.price}}</p>
+
+</div> -->
+
+<input type="text" [(ngModel)]="username">
+
+<button (click)="showName()">submit</button>
+<p>{{message}}</p>
+
+<input type="text" [(ngModel)]="searchT" (ngModelChange)="search($event)">
+
+
+
+</div>

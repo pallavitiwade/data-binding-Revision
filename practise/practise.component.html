@@ -1,0 +1,34 @@
+
+
+<h1 class="text-center text-danger">Cards</h1>
+
+<!-- <input (input)="searchCard($event)" type="text" class="form-control" [(ngModel)]="searchValue -->
+<!-- " placeholder="search card"> -->
+    <div class="row">
+        <div class="col-md-4 mb-4" *ngFor="let card of filter">
+            <mat-card>
+                <mat-card-title>
+                    {{card.content}}
+                </mat-card-title>
+                <hr>
+                <mat-card-content>
+                   {{card.body}}
+                </mat-card-content>
+                <mat-card-actions class="footer">
+                    <button mat-icon-button color="primary">
+                 <mat-icon>edit</mat-icon>
+                 </button>
+                 <button mat-icon-button color="warn">
+                <mat-icon>delete</mat-icon>
+                    </button>
+                </mat-card-actions>
+                </mat-card>
+        </div>
+    </div>
+
+    <div class="text-center" *ngIf="filter.length===0">
+        <h4>no card found</h4>
+    </div>
+
+    
+

@@ -1,0 +1,38 @@
+
+<h1 class="text-center text-danger">student table</h1>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>SR.No</th>
+                        <th>Name</th>
+                        <th>age</th>
+                        <th>course</th>
+                        <th>city</th>
+                        <th>marks</th>
+                        <th>Edit</th>
+                        <th>delete</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let std of students;index as i">
+                        <td>{{i+1}}</td>
+                        <td>{{std.name}}</td>
+                        <td>{{std.age}}</td>
+                        <td>{{std.course}}</td>
+                        <td>{{std.city}}</td>
+                        <td>{{std.marks}}</td>
+                        <td class="text-primary"><mat-icon>edit</mat-icon></td>
+                        <td class="text-danger"><mat-icon>delete</mat-icon></td>
+
+
+                    </tr>
+                </tbody>
+                
+            </table>
+        </div>
+    </div>
+</div>
